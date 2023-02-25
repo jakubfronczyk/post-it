@@ -8,3 +8,6 @@ The full stack application called PostIt, that allows you to share a wee message
 - tailwaind
 - postgres sql
 - railway
+- tanstack query (react query)
+- axios
+- react-hot-toast - for react notifications

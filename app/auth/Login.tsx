@@ -1,18 +1,19 @@
-'use client'
-import { signIn } from "next-auth/react"
+"use client";
+import { signIn } from "next-auth/react";
 
-type LoginProps = {}
-
+type LoginProps = {};
 
 const Login = (props: LoginProps) => {
-
     return (
         <li className="list-none">
-            <button onClick={() => signIn()} className="text-sm bg-gray-700 text-white py-2 px-6 rounded-xl disabled:opacity-25">
+            <button
+                onClick={() => signIn()}
+                className="text-sm bg-gray-700 text-white py-2 px-6 rounded-xl disabled:opacity-25"
+            >
                 Sign In
             </button>
         </li>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

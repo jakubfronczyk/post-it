@@ -13,6 +13,16 @@ type URL = {
     };
 };
 
+type CommentType = {
+    id: number;
+    message: string;
+    createdAt: string;
+    user: {
+        name: string;
+        image: string;
+    };
+};
+
 const fetchDetails = async (slug: string) => {
     const response = await axios.get(`/api/posts/${slug}`);
     return response.data;
@@ -35,7 +45,7 @@ const PostDetail = (url: URL) => {
                 comments={data.comments}
             />
             <AddComment id={data?.id} />
-            {data?.comments.map((comment) => (
+            {data?.comments.map((comment: CommentType) => (
                 <div
                     className="my-6 bg-white p-8 rounded-md"
                     key={comment.id}

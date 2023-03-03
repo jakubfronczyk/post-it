@@ -13,7 +13,7 @@ const allPost = async () => {
 };
 
 export default function Home() {
-    const { data, error, isLoading } = useQuery<PostsType>({
+    const { data, error, isLoading } = useQuery<PostsType[]>({
         queryFn: allPost,
         queryKey: ["posts"],
     });

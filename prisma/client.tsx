@@ -2,7 +2,9 @@ import { PrismaClient } from "@prisma/client";
 
 declare global {
     namespace NodeJS {
-        interface Global {}
+        interface Global {
+            prisma: PrismaClient;
+        }
     }
 }
 
@@ -14,7 +16,7 @@ interface CustomNobeJsGlobal extends NodeJS.Global {
 //prevent multiple instances of Prisma Client in development
 declare const global: CustomNobeJsGlobal;
 
-const prisma = globalThis.prisma || new PrismaClient();
+const prisma = global.prisma || new PrismaClient();
 
 if (process.env.NODE_ENV !== "production") global.prisma = prisma;
 

@@ -12,13 +12,14 @@ const allPost = async () => {
     return response.data;
 };
 
-export default function Home() {
+export default function Home(): JSX.Element {
     const { data, error, isLoading } = useQuery<PostsType[]>({
         queryFn: allPost,
         queryKey: ["posts"],
     });
-    if (error) return error;
-    if (isLoading) return "Loading...";
+    if (isLoading) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <main className="">

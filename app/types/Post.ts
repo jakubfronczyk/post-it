@@ -10,8 +10,8 @@ export type PostType = {
         image: string;
         name: string;
     };
-    comments: {
-        createdAt?: string;
+    comments?: {
+        createdAt?: string | undefined;
         id: string;
         postId: string;
         title: string;

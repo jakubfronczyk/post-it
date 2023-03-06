@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
     return (
         <main className="">
             <AddPost />
-            {data?.map((post: PostType) => (
+            {data?.map((post) => (
                 <Post
                     key={post.id}
                     id={post.id}
@@ -32,12 +32,7 @@ export default function Home(): JSX.Element {
                     avatar={post.user.image}
                     title={post.title}
                     comments={post.comments}
-                    user={{
-                        email: "",
-                        id: "",
-                        image: "",
-                        name: "",
-                    }}
+                    user={post.user}
                 />
             ))}
         </main>

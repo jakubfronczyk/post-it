@@ -1,5 +1,5 @@
 # Post It
-
+![Check out live](https://funny-tartufo-bc0364.netlify.app/)(I cannot change site and domain on netlify because google auth won't working)
 
 ## General info
 

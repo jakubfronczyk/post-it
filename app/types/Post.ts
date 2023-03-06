@@ -2,6 +2,8 @@ export type PostType = {
     id: string;
     title: string;
     updatedAt?: string;
+    avatar: string;
+    name: string;
     user: {
         email: string;
         id: string;

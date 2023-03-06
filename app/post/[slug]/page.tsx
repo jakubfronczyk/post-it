@@ -43,6 +43,12 @@ const PostDetail = (url: URL) => {
                 avatar={data.user.image}
                 title={data.title}
                 comments={data.comments}
+                user={{
+                    email: "",
+                    id: "",
+                    image: "",
+                    name: "",
+                }}
             />
             <AddComment id={data?.id} />
             {data?.comments.map((comment: CommentType) => (

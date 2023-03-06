@@ -9,9 +9,12 @@ export default async function handler(
     if (req.method === "GET") {
         try {
             console.log(req.query);
+            const id = Array.isArray(req.query.details)
+                ? req.query.details[0]
+                : req.query.details || "";
             const data = await prisma.post.findUnique({
                 where: {
-                    id: req.query.details,
+                    id,
                 },
                 include: {
                     user: true,

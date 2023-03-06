@@ -14,7 +14,7 @@ export default async function handler(
             return res.status(401).json({ message: "Please sing in." });
         //Get user
         const prismaUser = await prisma.user.findUnique({
-            where: { email: session?.user?.email },
+            where: { email: session?.user?.email ?? undefined },
         });
 
         try {

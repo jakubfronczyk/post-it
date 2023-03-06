@@ -40,8 +40,8 @@ export default async function handler(
             const result = await prisma.post.create({
                 data: {
                     title,
-                    userId: prismaUser.id,
-                },
+                    userId: prismaUser?.id,
+                } as any,
             });
             res.status(200).json(result);
         } catch (err) {

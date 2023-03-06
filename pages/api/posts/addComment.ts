@@ -31,7 +31,7 @@ export default async function handler(
                     message: title,
                     userId: prismaUser?.id,
                     postId,
-                },
+                } as any,
             });
             res.status(201).json(result);
         } catch (err) {

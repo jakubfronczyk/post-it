@@ -1,6 +1,6 @@
 # Post It
 
-![](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![](https://github.com/jakubfronczyk/post-it/blob/main/public/post-it.png)
 
 ## General innfo
 

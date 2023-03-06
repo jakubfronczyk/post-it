@@ -1,6 +1,5 @@
 # Post It
 
-<img src="https://github.com/jakubfronczyk/post-it/blob/main/public/post-it.png)" width="100" height="100">
 
 ## General info
 

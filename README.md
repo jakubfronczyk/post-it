@@ -1,13 +1,18 @@
 # Post It
 
-The full stack application called PostIt, that allows you to share a wee message with the world. We will be using Prisma and Postgresql as our backend with Next auth for creating and auth users.
+![](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-- prisma
-- react
-- next.js 13 - next auth and auth users
-- tailwaind
-- postgres sql
-- railway
-- tanstack query (react query)
-- axios
-- react-hot-toast - for react notifications
+## General innfo
+
+The full stack application called PostIt, that allows you to share a message with the world. You can login with Gmail and post your thoughts. The app allows you to add post or delete it and also add comments to your and other people posts.
+
+What I used to build this:
+
+-   Prisma
+-   React
+-   Next.js 13 - next auth and auth users
+-   Tailwaind css
+-   Railway (Postgres sql)
+-   Tanstack-query (react-query)
+-   axios
+-   react-hot-toast - for react notifications

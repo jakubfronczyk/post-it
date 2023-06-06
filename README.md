@@ -1,7 +1,4 @@
 # Post It
-[Check out project live](https://funny-tartufo-bc0364.netlify.app/)
-<br />
-
 
 ## General info
 
